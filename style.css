@@ -1,0 +1,128 @@
+
+        #main{
+            position:relative;
+            width: 100%;
+            height: 65px;
+            text-align: right;
+            margin-top: 10px;
+            top: 0;
+            transition: top 0.3s;
+        }
+        .elem{
+            color:white;
+            font-size: 27px;
+            cursor: pointer;
+            display: inline-block;
+            margin: 16px;
+            position: relative;
+            margin-right: 30px;
+            /*font-family: cursive;*/
+        }
+        .elem:hover{
+            color: rgb(255, 0, 0);
+            scale: 1.12;
+        }
+        .elem:after {
+            color: rgb(255, 0, 0);
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 3.2px;
+            bottom: 10;
+            left: 0;
+            margin-top: 34px;
+            background-color: white;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+          
+        .elem:hover:after {
+            color: rgb(255, 0, 0);
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        label{
+            color: rgb(43, 226, 92);
+            text-align: left;
+        }
+        #boddiv{
+            padding-top: 160px ;
+            /* margin-left: 20px;
+            margin-right: 20px; */
+            width: 100%;
+            display: flex;
+            flex-direction:  row;
+            justify-content: space-around;
+        }
+        .part{
+            /* background-image: url(iitp_admin.jpg);
+            background-repeat: no-repeat; */
+            margin-top: -80px;
+            opacity: 1;
+            width: 20%;
+            height: 350px;
+            background-color: rgb(247, 247, 249);
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+            
+        }
+        .part h1{
+            padding-top: 25px;
+            font-size: 35px;
+            font-family: cursive;
+            color: rgb(247, 68, 68);
+        }
+        .part:hover{
+            scale: 1.05;
+        }
+        #firstb{
+            margin-left: 80px;
+            background-image: url("clgfinal.png");
+            background-size: 340px 420px;
+        }
+        #secondb{
+            background-image: url("career final.png");
+            background-size: 340px 420px;
+        }
+        #lastb{
+            margin-right: 60px;
+            background-image: url("jobsfinal.png");
+            background-size: 340px 420px;
+        }
+        .chat1{
+            padding: 30px 40px 0px;
+            color:black;
+            font-size: 23px;
+            font-family: "Times New Roman", Times, serif;;
+        }
+        #particles-js{
+            width:640vh;
+            height:100vh;
+            overflow-x: hidden;
+        }
+        canvas{
+            display:block;
+        }
+        .team-section{
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        .hiren{
+            color: white;
+            text-decoration: none;
+        }
+        .professionpro{
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            font-size: 40px;
+        }
+        .P{
+            font-size: 86px;
+        }
+        

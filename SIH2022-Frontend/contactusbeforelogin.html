@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            height: 100%;
+            width:100%;
+            overflow-x: hidden;
+            background-color:white;
+            background-image: url("");
+            background-repeat: no-repeat;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .finall{
+            width: 52%;
+            height: 107vh;
+            text-align: center;
+            background-color:white;
+            margin-top:70px;
+            border-radius: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            
+        }
+        .all{
+            padding-top: 10px;
+            font-size: 30px;
+        }
+        #dont h1{
+            font-size: 30px;
+            padding: 4px 0px ;
+        }
+        #dont{
+            background-color:white;
+            height: 30%;
+            margin-top: 0px;
+            border-radius: 20px;
+        }
+        #dont a{
+            font-size: 30px;
+            text-decoration: none;
+            border: 2px solid;
+            border: none;
+            border-radius: 8px;
+            padding: 4px;
+            color:white;
+            /* padding-left: 4px;
+            padding-right: 5px; */
+            background-color: rgb(119, 194, 7);
+        }
+        #dont a:hover{
+            /* scale: 4; */
+            /* font-size:  ; */
+            background-color: green;
+            color: white;
+        }
+        #or{
+            padding-top: 0px;
+            font-size: 30px;
+            width: 100%;
+            background-color: aliceblue;
+        }
+        #particles-js{
+            width:640vh;
+            height:150vh;
+            overflow-x: hidden;
+        }
+        .password{
+            /* font-size: 30px; */
+            text-align: center;
+        }
+        form textarea{
+            width: 100%;
+            background-color:floralwhite;
+            border: 1px solid ;
+            padding: 5px;
+            border-radius: 8px;
+            margin-top: 14px;
+            scale:1.8 1.35;
+            font-family:  Georgia, 'Times New Roman', Times, serif;;
+        }
+        .username,.password{
+            font-size: 10px;
+            font-family: cursive;
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+        .submitlogin a{
+            text-decoration: none;
+            background-color:  rgb(119, 194, 7);
+            padding:2px 10px;
+            color: white;
+            border-radius: 10px;
+        }
+        .submitlogin a:hover{
+            background-color: green;
+            color: white;
+        }
+        .dfdf {
+            padding-top: 15px;
+            font-size: 18px;
+        }
+        .dfdf a{
+    
+            text-decoration: none;
+        }
+        .dfdf a:hover{
+            text-decoration: underline;
+        }
+        #regi{
+            margin-top: 10px;
+        }
+        .login{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .abcad{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .register{
+            padding-top: 2px;
+            padding-bottom: 5px;
+            padding-right:10px;
+            padding-left:10px;
+            font-size: 40px;
+            color:rgb(23, 6, 75);
+            font-style: bold;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: aqua;
+            width:fit-content;
+            margin-left: 52px;
+            border-radius: 10px;;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="team-section">
+    <div id="main">
+        <div>
+            <div class="elem"><a href="home.html" class="hiren">Home</a></div>
+            <div class="elem"><a href="aboutusbeforelogin.html" class="hiren">About Us</a></div>
+            <div class="elem"><a href="contactusbeforelogin.html" class="hiren1">Contact Us</a></div>
+        </div>
+    </div>
+    <div class="professionpro">
+        <span class="P">P</span><span>ROFESSION</span><span class="P">P</span><span>RO</span>
+    </div>
+    
+    <div class="abcad">
+    <div class="finall">
+        <div class="login">
+            <form>
+                <div class="register">Contact Us</div>
+                <br>
+                <div class="username all" > 
+                    <h1>Query (if any) :</h1>
+                </div><br>
+                <!-- <input type="text" size="70" required> -->
+                <textarea rows="5" columns="15"></textarea>
+                <br><br>
+                <div class="username all" > 
+                    <h1>Feedback :</h1>
+                </div><br>
+                <!-- <input type="text" size="70" required> -->
+                <textarea rows="5" columns="15"></textarea>
+                <br><br>
+                <div class="username all" > 
+                    <h1>Email id : abc@gov.in </h1>
+                </div>
+                <div class="username all" > 
+                    <h1>Helpline No. :  +91-XXXXXXXXXX </h1>
+                </div><br>
+                <br>
+                <div class="submitlogin all" >
+                    <a href="thanksafterlogin.html">Submit</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+<script src="particles.js"></script>
+  <script src="app.js"></script>
+  <script>requestAnimationFrame(update);</script>
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("main").style.top = "0";
+      } else {
+        document.getElementById("main").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+</body>
+</html>

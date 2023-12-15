@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Career</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            height: 100%;
+            width:100%;
+            overflow-x: hidden;
+            background-color:aliceblue;
+            background-image: url("");
+            background-repeat: no-repeat;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            z-index:1;
+        }
+        .finall{
+            width: 52%;
+            height: 300vh;
+            background-color:#ffcf98;
+            margin-top:70px;
+            border-radius: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            outline-color: black;
+        }
+        .all{
+            padding-top: 10px;
+            font-size: 30px;
+        }
+        #dont h1{
+            font-size: 30px;
+            padding: 4px 0px ;
+        }
+        #dont{
+            background-color:white;
+            height: 30%;
+            margin-top: 0px;
+            border-radius: 20px;
+        }
+        #dont a{
+            font-size: 30px;
+            text-decoration: none;
+            border: 2px solid;
+            border: none;
+            border-radius: 8px;
+            padding: 4px;
+            color:white;
+            /* padding-left: 4px;
+            padding-right: 5px; */
+            background-color: rgb(119, 194, 7);
+        }
+        #dont a:hover{
+            /* scale: 4; */
+            /* font-size:  ; */
+            background-color: green;
+            color: white;
+        }
+        #or{
+            padding-top: 0px;
+            font-size: 30px;
+            width: 100%;
+            background-color: aliceblue;
+        }
+        
+        .password{
+            /* font-size: 30px; */
+            text-align: center;
+        }
+        form textarea{
+            width: 100%;
+            background-color:floralwhite;
+            border: 1px solid ;
+            padding: 5px;
+            border-radius: 8px;
+            margin-top: 14px;
+            scale:1.8 1.35;
+            font-family:  Georgia, 'Times New Roman', Times, serif;;
+        }
+        .username,.password{
+            font-size: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+        .submitlogin a{
+            text-decoration: none;
+            background-color: orange;
+            padding:2px 10px;
+            color: white;
+            border-radius: 10px;
+        }
+        .submitlogin a:hover{
+            background-color: green;
+            color: white;
+        }
+        .dfdf {
+            padding-top: 15px;
+            font-size: 18px;
+        }
+        .dfdf a{
+    
+            text-decoration: none;
+        }
+        .dfdf a:hover{
+            text-decoration: underline;
+        }
+        #regi{
+            margin-top: 10px;
+        }
+        .login{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .abcad{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-left: 50px;
+            outline-color: black;
+        }
+        .register{
+            padding-top: 20px;
+            padding-bottom: 15px;
+            text-decoration: underline;
+            font-size: 40px;
+            color:rgb(23, 6, 75);
+            font-style: bold;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            
+        }
+        #vol{
+            scale:1.5;
+            width:330px;
+        }
+        .resume{
+            align-items: center;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #myfile{
+            padding-left:75px;
+            scale:1.45;
+        }
+        #particles-js{
+            width:640vh;
+            height:350vh;
+            overflow-x: hidden;
+        }
+        #quali{
+            border-radius:10px;
+            padding: 4px 10px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: floralwhite;
+            scale:1.4;
+        }
+        .null,.ten,.eleven,.bd,.md,.phd{
+            border-radius:10px;
+            padding: 4px 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: floralwhite;
+            scale:1.4;
+            font-size: 10px;
+        }
+        .professionpro{
+            color:orange;
+        }
+        .plant{
+            margin-top: -1500px;
+            scale:0.8;
+            margin-right: -1400px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="team-section">
+    <div id="main">
+        <div>
+            <div class="elem"><a href="home.html" class="hiren1">Home</a></div>
+            <div class="elem"><a href="aboutusafterlogin.html" class="hiren">About Us</a></div>
+            <div class="elem"><a href="contactusafterlogin.html" class="hiren">Contact Us</a></div>
+            <div class="elem"><a href="account.html" class="hiren">Account</a></div>
+            <div class="elem"><a href="home.html" class="hiren1">Logout</a></div>
+        </div>
+    </div>
+    <div class="professionpro">
+        <span class="P">P</span><span>ROFESSION</span><span class="P">P</span><span>RO</span>
+    </div>
+    
+    <div class="abcad">
+        <div class="finall">
+            <br>
+            <div class="register" style="padding:0px 200px">Predict your Career</div>
+            <div class="resume">
+                <br>
+                <h1>Upload Resume :</h1>
+                <br><br>
+                <input type="file" id="myfile">
+                <br><br><br>
+                <div class="submitlogin all" >
+                    <a href="output.html">Predict</a>
+                </div>
+            </div>
+            <br><br>
+                <div id="or" class="all" style="padding:0px 260px">--------- OR ---------</div>
+                <div class="login">
+                <form>
+                    
+                    <!-- <br> -->
+                    <div class="username all" > 
+                        <h1>Highest Educational Qualification : </h1>
+                    </div>
+                    <br>
+                    <select name="Qualification" id="quali">
+                        <option value="null">Select your Highest Qualification</option>
+                        <option value="ten">Class - 10th</option>
+                        <option value="eleven">Class - 11th or 12th</option>
+                        <option value="bd">Bachelor's Degree</option>
+                        <option value="md">Master's Degree</option>
+                        <option value="phd">PHD</option>
+                    </select>
+                    <br><br>
+                    <div class="username all" > 
+                        <h1>Current Employement Status :</h1>
+                    </div>
+                    <!-- <input type="text" size="70" required> -->
+                    <textarea rows="1" columns="15"></textarea>
+                    <br><br>
+                    <div class="username all" > 
+                        <h1>Skills :</h1>
+                    </div><br>
+                    <!-- <input type="text" size="70" required> -->
+                    <textarea rows="5" columns="15"></textarea>
+                    <br><br>
+                    <div class="username all" > 
+                        <h1>Hobbies/Interests :</h1>
+                    </div><br>
+                    <!-- <input type="text" size="70" required> -->
+                    <textarea rows="5" columns="15"></textarea>
+                    <br><br>
+                    <div class="username all" > 
+                        <h1>Courses Done :</h1>
+                    </div><br>
+                    <!-- <input type="text" size="70" required> -->
+                    <textarea rows="5" columns="15"></textarea>
+                    <br><br>
+                    <div class="username all" > 
+                        <h1>Extracurricular Activities :</h1>
+                    </div><br>
+                    <!-- <input type="text" size="70" required> -->
+                    <textarea rows="5" columns="15"></textarea>
+                    <br><br>
+                    <div class="username all" > 
+                        <h1>Achievements :</h1>
+                    </div><br>
+                    <!-- <input type="text" size="70" required> -->
+                    <textarea rows="5" columns="15"></textarea>
+                    <br><br>
+                    <div class="slider">
+                        <div class="username all"><h1>How much will you prioritize<br>your passion while <br>choosing a career ? :</h1></div>
+                        <br>
+                        <input type="range" id="vol" min="0" max="10">
+                    </div>
+                    <br><br>
+                    <div class="slider">
+                        <div class="username all"><h1>How much will you prioritize<br>your salary while <br>choosing a career ? :</h1></div>
+                        <br>
+                        <input type="range" id="vol" min="0" max="10">
+                    </div>
+                    <br>
+
+                    <br><br><br>
+                    <div class="submitlogin all" >
+                        <a href="output.html">Predict</a>
+                    </div>
+                </form>
+            </div>
+    </div>
+    <img class="plant"src="svg.svg">
+</div>
+</div>
+</body>
+</html>

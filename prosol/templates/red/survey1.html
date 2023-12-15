@@ -1,0 +1,297 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Career</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="/static/style.css? {% now 'U' %}">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            height: 100%;
+            width:100%;
+            overflow-x: hidden;
+            background-color:rgb(10, 10, 10);
+            background-image: url("");
+            background-repeat: no-repeat;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .finall{
+            width: 52%;
+            height: 310vh;
+            text-align: center;
+            background-color:white;
+            margin-top:70px;
+            border-radius: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            
+        }
+        .all{
+            padding-top: 10px;
+            font-size: 30px;
+        }
+        #dont h1{
+            font-size: 30px;
+            padding: 4px 0px ;
+        }
+        #dont{
+            background-color:white;
+            height: 30%;
+            margin-top: 0px;
+            border-radius: 20px;
+        }
+        #dont a{
+            font-size: 30px;
+            text-decoration: none;
+            border: 2px solid;
+            border: none;
+            border-radius: 8px;
+            padding: 4px;
+            color:white;
+            /* padding-left: 4px;
+            padding-right: 5px; */
+            background-color: rgb(119, 194, 7);
+        }
+        #dont a:hover{
+            /* scale: 4; */
+            /* font-size:  ; */
+            background-color: green;
+            color: white;
+        }
+        #or{
+            padding-top: 0px;
+            font-size: 30px;
+            width: 100%;
+            background-color: aliceblue;
+        }
+        
+        .password{
+            /* font-size: 30px; */
+            text-align: center;
+        }
+        form textarea{
+            width: 100%;
+            background-color:floralwhite;
+            border: 1px solid ;
+            padding: 5px;
+            border-radius: 8px;
+            margin-top: 14px;
+            scale:1.8 1.35;
+            font-family:  Georgia, 'Times New Roman', Times, serif;;
+        }
+        .username,.password{
+            font-size: 10px;
+            font-family: cursive;
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+        .submitlogin a{
+            text-decoration: none;
+            background-color:  rgb(119, 194, 7);
+            padding:2px 10px;
+            color: white;
+            border-radius: 10px;
+        }
+        .submitlogin a:hover{
+            background-color: green;
+            color: white;
+        }
+        .dfdf {
+            padding-top: 15px;
+            font-size: 18px;
+        }
+        .dfdf a{
+    
+            text-decoration: none;
+        }
+        .dfdf a:hover{
+            text-decoration: underline;
+        }
+        #regi{
+            margin-top: 10px;
+        }
+        .login{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .abcad{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .register{
+            padding-top: 20px;
+            padding-bottom: 15px;
+            text-decoration: underline;
+            font-size: 40px;
+            color:rgb(23, 6, 75);
+            font-style: bold;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        #vol{
+            scale:1.5;
+            width:330px;
+        }
+        .resume{
+            align-items: center;
+            text-align: center;
+            font-family: cursive;
+        }
+        #myfile{
+            padding-left:75px;
+            scale:1.25;
+        }
+        #particles-js{
+            width:640vh;
+            height:350vh;
+            overflow-x: hidden;
+        }
+        .asd{
+            background-color: greenyellow;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 4px;
+            padding: 4px 10px;
+            font-size:20px;
+            scale:1.2;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="team-section">
+        <div id="main">
+            <div>
+                <div class="elem"><a href="/accounts/profile" class="hiren">Hello, {{user.first_name}}!</a></div>
+                <div class="elem"><a href="/" class="hiren">Home</a></div>
+                <div class="elem"><a href="/aboutus" class="hiren">About Us</a></div>
+                <div class="elem"><a href="/contactus" class="hiren">Contact Us</a></div>
+                <div class="elem"><a href="/accounts/logout" class="hiren">Logout</a></div>
+            </div>
+        </div>
+    <div class="professionpro">
+        <span class="P">P</span><span>ROFESSION</span><span class="P">P</span><span>RO</span>
+    </div>
+    
+    <div class="abcad">
+    <div class="finall">
+        <br>
+        <div class="register">Predict your Career</div>
+        <form enctype="multipart/form-data" action="resultCV" method="post">
+            {% csrf_token %}
+            <div class="resume">
+                <br>
+                <h1>Upload Resume :</h1>
+                <br>
+                {{form}}
+                <input type="file" id="CV">
+                <br><br><br>
+                <div class="submitlogin all" >
+                    <button type = "submit" class="asd">Predict</button>
+                </div>
+            </div>
+        </form>
+        <br><br>
+        <div id="or" class="all">--------- OR ---------</div>
+        <div class="login">
+            <form action = "/survey/" method = "post">
+                {% csrf_token %}
+                <!-- <br> -->
+                <div class="username all" > 
+                    <h1>Highest Educational Qualification : </h1>
+                </div>
+                <!-- <input type="text" size="70" required> -->
+                <textarea rows="1" columns="15" name="qualification"></textarea>
+                <br><br>
+                <div class="username all" > 
+                    <h1>Current Employement Status :</h1>
+                </div>
+                <!-- <input type="text" size="70" required> -->
+                <textarea rows="1" columns="15" name="emp_stat"></textarea>
+                <br><br>
+                <div class="username all" > 
+                    <h1>Skills :</h1>
+                </div><br>
+                <!-- <input type="text" size="70" required> -->
+                <textarea rows="5" columns="15" name="skill"></textarea>
+                <br><br>
+                <div class="username all" > 
+                    <h1>Hobbies/Interests :</h1>
+                </div><br>
+                <!-- <input type="text" size="70" required> -->
+                <textarea rows="5" columns="15" name="hobbies"></textarea>
+                <br><br>
+                <div class="username all" > 
+                    <h1>Courses Done :</h1>
+                </div><br>
+                <!-- <input type="text" size="70" required> -->
+                <textarea rows="5" columns="15" name="courses"></textarea>
+                <br><br>
+                <div class="username all" > 
+                    <h1>Extracurricular Activities :</h1>
+                </div><br>
+                <!-- <input type="text" size="70" required> -->
+                <textarea rows="5" columns="15" name = "extracurricular"></textarea>
+                <br><br>
+                <div class="username all" > 
+                    <h1>Achievements :</h1>
+                </div><br>
+                <!-- <input type="text" size="70" required> -->
+                <textarea rows="5" columns="15" name = "achievements"></textarea>
+                <br><br>
+                <div class="slider">
+                    <div class="username all"><h1>How much will you prioritize<br>your passion while <br>choosing a career ? :</h1></div>
+                    <br>
+                    <input type="range" id="vol" min="0" max="10" name = "passion">
+                </div>
+                <br><br>
+                <div class="slider">
+                    <div class="username all"><h1>How much will you prioritize<br>your salary while <br>choosing a career ? :</h1></div>
+                    <br>
+                    <input type="range" id="vol" min="0" max="10" name = "salary">
+                </div>
+                <br>
+
+                <br><br>
+                <div class="submitlogin all" >
+                    <!-- <input type="submit"> -->
+                    <!-- <button type="submit" name="submit" value="Submit">Go !!</button> -->
+                    <button type="submit" class="asd" action = "result">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+<script src="{% static 'particles.js' %}"></script>
+  <script src="{% static 'app.js' %}"></script>
+  <script>requestAnimationFrame(update);</script>
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("main").style.top = "0";
+      } else {
+        document.getElementById("main").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+</body>
+</html>

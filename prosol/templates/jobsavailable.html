@@ -1,0 +1,817 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="/static/style.css? {% now 'U' %}">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            height: 100%;
+            width:100%;
+            overflow-x: hidden;
+            background-color:white;
+            background-image: url("");
+            background-repeat: no-repeat;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+        .card1{
+            border: 6px solid rgb(212, 94, 26);
+            width: 40vh;
+            height: 21.5vhvh;
+            background-color: #ffcf9f;
+            margin-top:40px;
+            border-radius: 20px;
+            padding-bottom: 40px;
+            padding: 0% 2% ; 
+            margin-bottom: 40px;
+           font-size: 125%;
+           
+            
+        }
+        .IN{ color: blue;
+           font-family:'Times New Roman', Times, serif; }
+        
+        .CN{ color: rgb(202, 27, 48);
+          font-family:'Times New Roman', Times, serif;}
+        
+        .SD{ color: rgb(15, 153, 15);
+            font-family:fantasy; }
+        
+            .ED{ color: rgb(206, 65, 168);
+                font-family: 'Times New Roman', Times, serif; }
+              
+            .VS{ color:rgb(21, 24, 24) ;
+                font-family:'Times New Roman', Times, serif; }
+        
+        .BT{  color: rgb(34, 96, 130);
+            border-radius: 40%;
+            padding: 0.5% 1%;
+            font-family:'Times New Roman', Times, serif ; 
+            margin: 0% 40%;}
+        
+        button:hover{
+           
+            color: black;
+            background-color: rgb(206, 65, 168);
+          }
+        
+          .card1:hover{
+            background-color:white;
+          }
+        
+        .out{
+            width: 100%;
+            margin: 0% 40%;
+            /* display: flex;  */
+        }
+        .professionpro{
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="team-section">
+    <div id="main">
+      <div>
+        <div class="elem"><a href="/" class="hiren">Home</a></div>
+        <div class="elem"><a href="/aboutus" class="hiren">About Us</a></div>
+        <div class="elem"><a href="/contactus" class="hiren">Contact Us</a></div>
+        <div class="elem"><a href="/accounts/profile" class="hiren">Account</a></div>
+        <div class="elem"><a href="/accounts/logout" class="hiren">Logout</a></div>
+    </div>
+    </div>
+    <div class="professionpro">
+        <span class="P">P</span><span>ROFESSION</span><span class="P">P</span><span>RO</span>
+    </div>
+    
+    <div class="out">
+
+        <div class="card1">
+          <div class="IN">
+            Data Science
+          </div>
+    
+          <div class="CN">
+            <span>Degree: Btech</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: Computer Science and Engineering </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 70 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            HR
+          </div>
+    
+          <div class="CN">
+            <span>Degree: BA </span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation:Human Resources and Management (HRM) </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 50 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Advocate
+          </div>
+    
+          <div class="CN">
+            <span>Degree: BA LLB / B.Com LLB / BBA LLB</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: LLB + LLM
+            </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 40 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Arts
+          </div>
+    
+          <div class="CN">
+            <span>Degree: BA</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: Economics, Literature, Political Science </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 80 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Web Designing
+          </div>
+    
+          <div class="CN">
+            <span>Degree: Btech</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: Computer Science and Engineering </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 40 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Mechanical Engineer
+          </div>
+    
+          <div class="CN">
+            <span>Degree: Btech</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span> Mechanical Engineering </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 60 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Sales'
+          </div>
+    
+          <div class="CN">
+            <span>Degree: BA</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: Communication </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 75 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Health and fitness
+          </div>
+    
+          <div class="CN">
+            <span>Degree: BSc </span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Food Science
+            </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 90 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Civil Engineer
+          </div>
+    
+          <div class="CN">
+            <span>Degree: Btech</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Civil Engineering
+            </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 30 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Java Developer
+          </div>
+    
+          <div class="CN">
+            <span>Degree: Btech</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: Computer Science and Engineering </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 55 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+    
+        <div class="card1">
+          <div class="IN">
+            Business Analyst
+          </div>
+    
+          <div class="CN">
+            <span>Degree: Bcom/Bsc</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Economics/Finance
+            </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 90 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Data Science
+          </div>
+    
+          <div class="CN">
+            <span>Degree: Btech</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: Computer Science and Engineering </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 70 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            HR
+          </div>
+    
+          <div class="CN">
+            <span>Degree: BA </span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation:Human Resources and Management (HRM) </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 50 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Advocate
+          </div>
+    
+          <div class="CN">
+            <span>Degree: BA LLB / B.Com LLB / BBA LLB</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: LLB + LLM
+            </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 40 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Arts
+          </div>
+    
+          <div class="CN">
+            <span>Degree: BA</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: Economics, Literature, Political Science </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 580 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Web Designing
+          </div>
+    
+          <div class="CN">
+            <span>Degree: R</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: w </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 40 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Mechanical Engineer
+          </div>
+    
+          <div class="CN">
+            <span>Degree: Btech</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span> h </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 360 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+           23
+          </div>
+    
+          <div class="CN">
+            <span>Degree: T</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: r </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 275 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            21
+          </div>
+    
+          <div class="CN">
+            <span>Degree: I </span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>j
+            </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 990 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+           20
+          </div>
+    
+          <div class="CN">
+            <span>Degree: Q</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>p
+            </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 430 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+           19
+          </div>
+    
+          <div class="CN">
+            <span>Degree: V</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: p </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 855 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+    
+        <div class="card1">
+          <div class="IN">
+            17
+          </div>
+    
+          <div class="CN">
+            <span>Degree: L</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Economics
+            </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 590 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+           15
+          </div>
+    
+          <div class="CN">
+            <span>Degree: K</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: s </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 670 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+           12
+          </div>
+    
+          <div class="CN">
+            <span>Degree:  J </span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation:g1 </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 450 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+           11
+          </div>
+    
+          <div class="CN">
+            <span>Degree: H</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: e2
+            </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 440 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+           10
+          </div>
+    
+          <div class="CN">
+            <span>Degree: G</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: F1 </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 770 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            9
+          </div>
+    
+          <div class="CN">
+            <span>Degree: F</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: e1 </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 40 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            7
+          </div>
+    
+          <div class="CN">
+            <span>Degree: E</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>d1 </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 550 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+           6
+          </div>
+    
+          <div class="CN">
+            <span>Degree: D</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: Communication </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 75 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            5
+          </div>
+    
+          <div class="CN">
+            <span>Degree:d </span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>c1
+            </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 670 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            4
+          </div>
+    
+          <div class="CN">
+            <span>Degree: C</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>
+            </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 330 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            2
+          </div>
+    
+          <div class="CN">
+            <span>Degree: B</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Specialisation: a1 </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 550 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+    
+        <div class="card1">
+          <div class="IN">
+            Business Analyst
+          </div>
+    
+          <div class="CN">
+            <span>Degree: A</span> <br>
+          </div>
+    
+          <div class="SD">
+            <span>Finance
+            </span>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 190 <br>
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+      </div>
+
+
+
+
+
+</div>
+<script src="{% static 'particles.js' %}"></script>
+  <script src="{% static 'app.js' %}"></script>
+  <script>requestAnimationFrame(update);</script>
+</body>
+</html>

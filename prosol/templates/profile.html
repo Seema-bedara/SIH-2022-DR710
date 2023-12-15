@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="/static/style.css? {% now 'U' %}">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            height: 100%;
+            width:100%;
+            overflow-x: hidden;
+            background-color:rgb(10, 10, 10);
+            background-image: url("");
+            background-repeat: no-repeat;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .professionpro{
+            text-align: center;
+            color: white;
+            margin-top: 125px;
+            font-size: 40px;
+        }
+        .container {
+            margin-top: 30px;;
+            width: 100%; 
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .inside {
+              text-align: center;
+            width: 30%; 
+            height: 80vh;
+            background-color: white;
+            border: 2px solid black; 
+            padding-top: 0px;
+            /* padding: 40px; */
+            padding-bottom:40px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            border-radius:20px;
+            margin-bottom: 30px;
+          }
+          .inside div{
+              /* padding-top: 20px; */
+              margin-top: 30px;
+          }
+          
+          .Profile_Image{
+              text-align: center;
+              /* justify-content: center; */
+              height: 40%;
+              width: 50%;
+              background-color: aliceblue;
+              border-radius: 50%;
+              padding:0;
+              margin: 0;
+          }
+          .Profile_Image img{
+              /* overflow: hidden; */
+              width: 100%;
+              height: 100%;
+              overflow:hidden;
+              object-fit: cover;
+          }
+          #changepasswor_d{
+              padding: 5px 10px;
+              border-radius: 20px;
+              background-color: black;
+          }
+          #changepasswor_d a{
+              color: white;
+              text-decoration: none;
+          }
+          #changepasswor_d:hover{
+              scale: 1.1;
+              background-color: rgb(49, 47, 61);
+          }
+          .span1{
+              font-size: 20px;
+          }
+          /* .immg { border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%; } */
+          img{
+              border-radius: 100%;
+              width: 80%;
+              padding-bottom: 10px;
+          }
+          .team-section{
+            width: 100%;
+          }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="team-section">
+    <div id="main">
+        <div>
+            <div class="elem"><a href="/" class="hiren">Home</a></div>
+            <div class="elem"><a href="/aboutus" class="hiren">About Us</a></div>
+            <div class="elem"><a href="/contactus" class="hiren">Contact Us</a></div>
+            <div class="elem"><a href="accounts/logout" class="hiren">Logout</a></div>
+        </div>
+    </div>
+    <div class="professionpro">
+        <span class="P">P</span><span>ROFESSION</span><span class="P">P</span><span>RO</span>
+    </div>
+    <div class="container">
+        <div class="inside">
+        <div class="Profile_Image">
+            <img  class="immg" src="{% static 'blank-profile-picture.jpg' %}" alt="Profile Image">
+        </div>
+        <div>
+            <span class="span1"><b>Username :</b> </span><span class="span1">{{user.username}}</span>
+        </div>
+        <div>
+            <span class="span1"><b>Name :</b> </span><span class="span1">{{user.first_name}} {{user.last_name}}</span>
+        </div>
+        <div>
+            <span class="span1"><b>Email Id :</b> </span><span class="span1">{{user.email}}</span>
+        </div>
+        <div>
+            <button id="changepasswor_d">
+                <a href="changepasswordafterlogin.html">
+                    Change Password
+                </a>
+            </button>
+        </div>
+    </div>
+    </div>
+</div>
+<script src="{% static 'particles.js' %}"></script>
+  <script src="{% static 'app.js' %}"></script>
+  <script>requestAnimationFrame(update);</script>
+</body>
+</html>

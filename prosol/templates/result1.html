@@ -1,0 +1,645 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career and Career Path</title>
+    <link rel="stylesheet" href="/static/style.css? {% now 'U' %}">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            height: 100%;
+            width:100%;
+            overflow-x: hidden;
+            background-color:black;
+            background-image: url("");
+            background-repeat: no-repeat;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .job{
+            color:aqua;
+            font-size: 25px;
+            text-align: center;
+            margin-top:5vh;
+        }
+        .cp{
+            color: rgb(255, 247, 0);
+            font-size: 25px;
+            text-align: center;
+            margin-top: 3vh;
+        }
+        .result{
+            color:white;
+            font-size: 30px;
+            text-align: left;
+            margin-top:4.6vh;
+        }
+        .path{
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+        }
+        .PCM{
+            position:relative;
+            border-radius: 10px;
+            background-color: floralwhite;
+            width:fit-content;
+            padding:4px 10px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            scale:1.5;
+            margin-left: 7%;
+        }
+        .PCM1{
+            position:relative;
+            border-radius: 10px;
+            background-color: floralwhite;
+            width:fit-content;
+            padding:4px 10px;
+            text-align: center;
+            margin-top: 40px;
+            scale:1.5;
+            margin-left: 47%;
+            margin-bottom: 10px;
+        }
+        .PCM2{
+            position:relative;
+            border-radius: 10px;
+            background-color: floralwhite;
+            width:fit-content;
+            padding:4px 10px;
+            text-align: center;
+            margin-top: 20px;
+            scale:1.5;
+            margin-left:48.4%;
+        }
+        .PCM3{
+            position:relative;
+            border-radius: 10px;
+            background-color: floralwhite;
+            width:fit-content;
+            padding:4px 10px;
+            text-align: center;
+            margin-top: 20px;
+            scale:1.5;
+            margin-left: 43.5%;
+            margin-bottom: 10px;
+        }
+        .PCM4{
+            position:relative;
+            border-radius: 10px;
+            background-color: floralwhite;
+            width:fit-content;
+            padding:4px 10px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            scale:1.5;
+            margin-left: 43.5%;
+        }
+        .da{
+            margin-top: 0px;
+        }
+        .ff{
+            display:flex;
+            flex-direction: row;
+        }
+        .la{
+            scale:1.8;
+            margin-left: 4%;
+            margin-top:1.8%;
+        }
+        .jb{
+            position:relative;
+            border-radius: 10px;
+            background-color: floralwhite;
+            width:fit-content;
+            padding:4px 10px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            scale:1.5;
+            margin-left: 25%;
+        }
+        .result1{
+            color:aqua;
+            font-size: 30px;
+            text-align: left;
+            margin-top:4.6vh;
+            text-align: center;
+        }
+        #particles-js{
+            width:640vh;
+            height:200vh;
+            overflow-x: hidden;
+        }
+        .card1{
+            border: 6px solid black;
+            width: 45vh;
+            height:21vh;
+            background-color: #ffcf9f;
+            margin-top:40px;
+            border-radius: 20px;
+            padding-bottom: 40px;
+            padding: 0% 2% ; 
+            margin-bottom: 40px;
+           font-size: 115%;
+            
+        }
+        .IN{ color: rgb(227, 133, 26);
+           font-family:'Times New Roman', Times, serif ;
+           font-weight: bold;
+             }
+        
+        .CN{ color: black;
+          font-family:'Times New Roman', Times, serif;
+          padding: 0% 1% ;}
+        
+        .SD{ color: black;
+            font-family:'Times New Roman', Times, serif; 
+            padding: 0% 2% ;}
+        
+            .ED{ color: rgb(206, 65, 168);
+                font-family: initial; 
+                display: flex;
+                
+              }
+              
+            .VS{ color:rgb(21, 24, 24) ;
+                font-family: initial; }
+        
+        
+        button:hover{
+           
+            color: black;
+            background-color: rgb(206, 65, 168);
+            border: 6px solid rgb(234, 224, 224);
+          }
+        
+          .card1:hover{
+            background-color:white;
+        
+          }
+        
+          .out{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0% 40%;
+            overflow-x: hidden;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="team-section">
+    <div id="main">
+        <div>
+            <div class="elem"><a href="/" class="hiren">Home</a></div>
+            <div class="elem"><a href="/aboutus" class="hiren">About Us</a></div>
+            <div class="elem"><a href="/contactus" class="hiren">Contact Us</a></div>
+            <div class="elem"><a href="/accounts/profile" class="hiren">Account</a></div>
+            <div class="elem"><a href="/accounts/logout" class="hiren">Logout</a></div>
+        </div>
+    </div>
+    <div class="professionpro">
+        <span class="P">P</span><span>ROFESSION</span><span class="P">P</span><span>RO</span>
+    </div>
+    <div class="job">
+        We recommend you to become these :- <br><br>
+        <!-- <span class="result">1. {{ context.context }}</span><br><br> -->
+        <!-- <span class="result">2. HR</span><br><br>
+        <span class="result">3. Cricketer</span> -->
+        <span class="result">1. {{ context }}</span><br>
+        <span class="result">2. {{ b }}</span><br>
+        <span class="result">3. {{ c }}</span><br>
+    </div>
+    <div class="cp">
+        You can follow this career path to become<br>
+        
+        <br>
+        <!-- Other career options are - -->
+        <div class="path">
+            <!-- <img src="se.png"> -->
+        </div>
+    </div>
+
+    <br><br>
+    <div class="result1">1. Career Path for {{context}} :-</div>
+    <div class="path">
+        <div class="PCM1" id="one">
+            Class 10th
+        </div>
+        <br>
+        <div class="da"><img src="{% static 'da.png' %}" height=70px width=30px></div>
+        <br>
+        <div class="PCM3" id="two">
+            Class 11th and 12th in PCM
+        </div>
+        <br>
+        <div class="da"><img src="{% static 'da.png' %}" height=70px width=30px></div>
+        <br>
+        <div class="ff">
+            <div class="jb" id="jb1">Job</div>
+            <div class="la"><img src="{% static 'la.png' %}" height=20px width=50px></div>
+            <div class="PCM" id="three">
+                B.Tech in CSE or related fields
+            </div>
+        </div>
+        <br>
+        <div class="da"><img src="{% static 'da.png' %}" height=70px width=30px></div>
+        <br>
+        <div class="ff">
+            <div class="jb" id="jb2">Job</div>
+            <div class="la"><img src="{% static 'la.png' %}" height=20px width=50px></div>
+            <div class="PCM" id="four">
+                M.Tech in CSE or related fields
+            </div>
+        </div>
+        <br>
+        <div class="da"><img src="{% static 'da.png' %}" height=70px width=30px></div>
+        <br>
+        <div class="PCM4" id="five">
+            PHD in CSE or related fields
+        </div>
+        <br>
+        <div class="da"><img src="{% static 'da.png' %}" height=70px width=30px></div>
+        <br>
+        <div class="PCM2" id="jb3">
+            Job
+        </div>
+        <br><br>
+    </div>
+    <!-- <div class="out">
+        <div class="card1">
+            <div class="IN">
+                Data Scientist jobs
+            </div>
+
+            <div class="ED">
+                <div class="CN">
+                    <span>Goverment Sector </span>
+                    <ul>
+                        <li>
+                            ISRO
+
+                        </li><br>
+                        <li>
+                            ICMR
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="SD">
+                    <span> Private Sector </span>
+                    <ul>
+                        <li>
+                            Acetc
+                        </li><br>
+                        <li>
+                            Wipro
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card1">
+            <div class="IN">
+               Human Resources
+            </div>
+
+            <div class="ED">
+                <div class="CN">
+                    <span>Goverment Sector </span>
+                    <ul>
+                        <li>
+                      IIT Hyderabad
+                        </li><br>
+                        <li>
+                          IIT Guwahati
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="SD">
+                    <span> Private Sector </span>
+                    <ul>
+                        <li>
+                            Amazon
+                        </li><br>
+                        <li>
+                        Axis Bank
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card1">
+            <div class="IN">
+               Advocate
+            </div>
+
+            <div class="ED">
+                <div class="CN">
+                    <span>Goverment Sector </span>
+                    <ul>
+                        <li>
+                         High Court
+
+                        </li><br>
+                        <li>
+                         Supreme Court  
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="SD">
+                    <span> Private Sector </span>
+                    <ul>
+                        <li>
+                        Supreme Law House
+                        </li><br>
+                        <li>
+                          ProofHub
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card1">
+            <div class="IN">
+               Economicst
+            </div>
+
+            <div class="ED">
+                <div class="CN">
+                    <span>Goverment Sector </span>
+                    <ul>
+                        <li>
+                        RBI
+
+                        </li><br>
+                        <li>
+                            IES
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="SD">
+                    <span> Private Sector </span>
+                    <ul>
+                        <li>
+                        Amazon
+                        </li><br>
+                        <li>
+                        CAPA India
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card1">
+            <div class="IN">
+               Writer
+            </div>
+
+            <div class="ED">
+                <div class="CN">
+                    <span>Goverment Sector </span>
+                    <ul>
+                        <li>
+                     New Globe Schools
+                        </li><br>
+                        <li>
+                    Recity Network India
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="SD">
+                    <span> Private Sector </span>
+                    <ul>
+                        <li>
+                        CES Privatte Limited
+                        </li><br>
+                        <li>
+                       Vithala Media Network 
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card1">
+            <div class="IN">
+             Politician
+            </div>
+
+            <div class="ED">
+                <div class="CN">
+                    <span>Goverment Sector </span>
+                    <ul>
+                        <li>
+                PUBG Corporation
+                        </li> <br>
+                        <li>
+                    TravClan
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="SD">
+                    <span> Private Sector </span>
+                    <ul>
+                        <li>
+                Nation with Namo
+                        </li><br>
+                        <li>
+                    International SOS
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card1">
+            <div class="IN">
+               J6
+            </div>
+
+            <div class="ED">
+                <div class="CN">
+                    <span>Goverment Sector </span>
+                    <ul>
+                        <li>
+                        L
+                        </li><br>
+                        <li>
+                        K
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="SD">
+                    <span> Private Sector </span>
+                    <ul>
+                        <li>
+                          12
+                        </li><br>
+                        <li>
+                        11
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+    <div>
+    <button style="text-align:center"><a href='/admissions'>Admissions Availible</a></button>
+    <button><a href='/jobsav'>Jobs Availible</a></button>
+    </div>
+
+    <script>
+        const first=document.getElementById("one");
+        const second=document.getElementById("two");
+        const third=document.getElementById("three");
+        const fourth=document.getElementById("four");
+        const fifth=document.getElementById("five");
+        const j1=document.getElementById("jb1");
+        const j2=document.getElementById("jb2");
+        const j3=document.getElementById("jb3");
+        first.onclick = function() {myFunction1()};
+        second.onclick = function() {myFunction2()};
+        third.onclick = function() {myFunction3()};
+        fourth.onclick = function() {myFunction4()};
+        fifth.onclick = function() {myFunction5()};
+        j1.onclick = function() {myfunction6()};
+        j2.onclick = function() {myfunction7()};
+        j3.onclick = function() {myfunction8()};
+        function myFunction1() {
+            first.style.backgroundColor='green';
+            second.style.backgroundColor='floralwhite';
+            three.style.backgroundColor='floralwhite';
+            fourth.style.backgroundColor='floralwhite';
+            fifth.style.backgroundColor='floralwhite';
+            j1.style.backgroundColor='floralwhite';
+            j2.style.backgroundColor='floralwhite';
+            j3.style.backgroundColor='floralwhite';
+        }
+        function myFunction2() {
+            first.style.backgroundColor='green';
+            second.style.backgroundColor='green';
+            three.style.backgroundColor='floralwhite';
+            fourth.style.backgroundColor='floralwhite';
+            fifth.style.backgroundColor='floralwhite';
+            j1.style.backgroundColor='floralwhite';
+            j2.style.backgroundColor='floralwhite';
+            j3.style.backgroundColor='floralwhite';
+        }
+        function myFunction3() {
+            first.style.backgroundColor='green';
+            second.style.backgroundColor='green';
+            three.style.backgroundColor='green';
+            fourth.style.backgroundColor='floralwhite';
+            fifth.style.backgroundColor='floralwhite';
+            j1.style.backgroundColor='floralwhite';
+            j2.style.backgroundColor='floralwhite';
+            j3.style.backgroundColor='floralwhite';
+        }
+        function myFunction4() {
+            first.style.backgroundColor='green';
+            second.style.backgroundColor='green';
+            three.style.backgroundColor='green';
+            fourth.style.backgroundColor='green';
+            fifth.style.backgroundColor='floralwhite';
+            j1.style.backgroundColor='floralwhite';
+            j2.style.backgroundColor='floralwhite';
+            j3.style.backgroundColor='floralwhite';
+        }
+        function myFunction5() {
+            first.style.backgroundColor='green';
+            second.style.backgroundColor='green';
+            three.style.backgroundColor='green';
+            fourth.style.backgroundColor='green';
+            fifth.style.backgroundColor='green';
+            j1.style.backgroundColor='floralwhite';
+            j2.style.backgroundColor='floralwhite';
+            j3.style.backgroundColor='floralwhite';
+        }
+        function myfunction6(){
+            first.style.backgroundColor='green';
+            second.style.backgroundColor='green';
+            three.style.backgroundColor='green';
+            fourth.style.backgroundColor='floralwhite';
+            fifth.style.backgroundColor='floralwhite';
+            j1.style.backgroundColor='green';
+            j2.style.backgroundColor='floralwhite';
+            j3.style.backgroundColor='floralwhite';
+        }
+        function myfunction7(){
+            first.style.backgroundColor='green';
+            second.style.backgroundColor='green';
+            three.style.backgroundColor='green';
+            fourth.style.backgroundColor='green';
+            fifth.style.backgroundColor='floralwhite';
+            j1.style.backgroundColor='floralwhite';
+            j2.style.backgroundColor='green';
+            j3.style.backgroundColor='floralwhite';
+        }
+        function myfunction8(){
+            first.style.backgroundColor='green';
+            second.style.backgroundColor='green';
+            three.style.backgroundColor='green';
+            fourth.style.backgroundColor='green';
+            fifth.style.backgroundColor='green';
+            j1.style.backgroundColor='floralwhite';
+            j2.style.backgroundColor='floralwhite';
+            j3.style.backgroundColor='green';
+        }
+    </script>
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+  <script>requestAnimationFrame(update);</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+:root {
+    --path: "M520.96,105.19c544.66,45.35,69.78,130.01,6.01,147.27c-127.89,29.28,-502.81,107,10.01,130.24";
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    min-height: 100vh;
+    background: #ddd;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      background: #222;
+    }
+  }
+  .container {
+      position: relative;
+      height: calc(var(--height) * 1vmin);
+      width: calc(var(--width) * 1vmin);
+      border: 2px solid #222;
+      width:100%;
+      height:100%;
+  }
+  @media (prefers-color-scheme: dark) {
+    .container {
+      border: 2px solid #ddd;
+    }
+  }
+  h1 {
+    position: absolute;
+    top: calc(50% + (calc(var(--height) / 2) * 1vmin));
+    -webkit-transform: translate(0, 50%);
+            transform: translate(0, 50%);
+    color: #ddd;
+    font-weight: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 1.25rem;
+    width: calc(var(--width) * 1vmin);
+  }
+  .element {
+    position:relative;
+    top: -20%;
+    left: 0%;
+    scale: 0.1;
+    offset-path: path(var(--path));
+    -webkit-animation: travel 5s infinite alternate linear;
+            animation: travel 5s infinite alternate linear;
+  }
+  svg {
+    position: absolute;
+    height: calc(var(--height) * 1vmin);
+    opacity: 1;
+    width: calc(var(--width) * 1vmin);
+  }
+  svg path {
+    fill: none;
+    stroke-width: 4px;
+    stroke: #222;
+  }
+  @media (prefers-color-scheme: dark) {
+    svg path {
+      stroke: #ddd;
+    }
+  }
+  @-webkit-keyframes travel {
+    0% {
+      offset-distance: 0%;
+      
+    }
+     20% {
+      offset-distance: 20%;
+       
+    }
+    100% {
+      offset-distance: 100%;
+    }
+  }
+  @keyframes travel {
+    from {
+      offset-distance: 0%;
+    }
+    to {
+      offset-distance: 100%;
+    }
+  }
+  

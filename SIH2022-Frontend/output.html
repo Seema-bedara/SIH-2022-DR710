@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career and Career Path</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            height: 100%;
+            width:100%;
+            overflow-x: hidden;
+            background-color:floralwhite;
+            background-image: url("bg.png");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .job{
+            color:black;
+            font-size: 25px;
+            text-align: center;
+            margin-top:5vh;
+        }
+        .cp{
+            color: rgb(255, 247, 0);
+            font-size: 25px;
+            text-align: center;
+            margin-top: 3vh;
+        }
+        .result{
+            color:floralwhite;
+            font-size: 30px;
+            text-align: left;
+            margin-top:4.6vh;
+        }
+        .path{
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+        }
+        .PCM{
+            position:relative;
+            border-radius: 10px;
+            background-color: rgb(242, 191, 88);
+            width:fit-content;
+            padding:4px 10px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            scale:1.5;
+            margin-left: 15%;
+        }
+        .PCM1{
+            position:relative;
+            border-radius: 10px;
+            background-color: rgb(242, 191, 88);
+            width:fit-content;
+            padding:4px 10px;
+            text-align: center;
+            margin-top: 40px;
+            scale:1.5;
+            margin-left: 37%;
+            margin-bottom: 10px;
+            /*margin-left: 660px;*/
+        }
+        .PCM2{
+            position:relative;
+            border-radius: 10px;
+            background-color: rgb(242, 191, 88);
+            width:fit-content;
+            padding:4px 10px;
+            text-align: center;
+            margin-top: 20px;
+            scale:1.5;
+            margin-left:48.4%;
+            /*margin-left: 660px;*/
+        }
+        .PCM3{
+            position:relative;
+            border-radius: 10px;
+            background-color: rgb(242, 191, 88);
+            width:fit-content;
+            padding:4px 10px;
+            text-align: center;
+            margin-top: 20px;
+            scale:1.5;
+            margin-left: 27%;
+            margin-bottom: 10px;
+            /*margin-left: 660px;*/
+        }
+        .PCM4{
+            position:relative;
+            border-radius: 10px;
+            background-color: rgb(242, 191, 88);
+            width:fit-content;
+            padding:4px 10px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            scale:1.5;
+            margin-left: 34%;
+            /*margin-left: 660px;*/
+        }
+        .da{
+            margin-top: 0px;
+        }
+        .ff{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .la{
+            scale:1.3;
+            margin-left: 8%;
+            margin-top:8%;
+        }
+        .jb{
+            position:relative;
+            border-radius: 10px;
+            background-color:rgb(242, 191, 88);
+            width:fit-content;
+            padding:4px 10px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            scale:1.5;
+        }
+        .result1{
+            color:black;
+            font-size: 25px;
+            text-align: left;
+            margin-top:4.6vh;
+            text-align: center;
+        }
+        #particles-js{
+            width:640vh;
+            height:200vh;
+            overflow-x: hidden;
+        }
+        .card1{
+            border: 6px solid black;
+            width: 45vh;
+            height:21vh;
+            background-color: #ffcf9f;
+            margin-top:40px;
+            border-radius: 20px;
+            padding-bottom: 40px;
+            padding: 0% 2% ; 
+            margin-bottom: 40px;
+           font-size: 115%;
+           /* display: flex; */
+            
+        }
+        .IN{ color: rgb(227, 133, 26);
+           font-family:'Times New Roman', Times, serif ;
+           font-weight: bold;
+             }
+        
+        .CN{ color: black;
+          font-family:'Times New Roman', Times, serif;
+          padding: 0% 1% ;}
+        
+        .SD{ color: black;
+            font-family:'Times New Roman', Times, serif; 
+            padding: 0% 2% ;}
+        
+            .ED{ color: rgb(206, 65, 168);
+                font-family: initial; 
+                display: flex;
+                
+              }
+              
+            .VS{ color:rgb(21, 24, 24) ;
+                font-family: initial; }
+        
+        
+        button:hover{
+           
+            color: black;
+            background-color: rgb(206, 65, 168);
+            border: 6px solid rgb(234, 224, 224);
+          }
+        
+          .card1:hover{
+            background-color:white;
+        
+          }
+        
+          .out{
+            width: 100%;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0% 40%;
+            overflow-x: hidden;
+            padding-top: 60%;
+        }
+        @-webkit-keyframes arrow-jump {
+            0%   { opacity: 0;}
+            100% { opacity: 1; 
+                  -webkit-transform: translateY(10px);
+                  -moz-transform: translateY(10px);
+                  -0-transform: translateY(10px);
+                  transform: translateY(10px);
+              }
+            
+          }
+          #arrow {
+            -webkit-animation: arrow-jump 1s infinite; 
+            -moz-animation:    arrow-jump 1s infinite; 
+            -o-animation:      arrow-jump 1s infinite; 
+            animation:         arrow-jump 1s infinite; 
+          }
+          .arrw{
+            display:flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            scale:0.5;
+            margin-left:1px;
+          }
+          .pag{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+          }
+          .harshit1{
+            padding-right:50px;
+            justify-content: center;
+            position: relative;
+          }
+          .harshit2{
+            padding-right:50px;
+            position: relative;
+          }
+          .harshit3{
+            position: relative;
+          }
+          .path{
+            justify-content: center;
+          }
+          #jb3{
+            margin-left:45%;
+          }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="team-section">
+    <div id="main">
+        <div>
+            <div class="elem"><a href="home.html" class="hiren1">Home</a></div>
+            <div class="elem1"><a href="admissions.html" class="hiren">Admissions</a></div>
+            <div class="elem1"><a href="jobsavailable.html" class="hiren">Jobs</a></div>
+            
+            <div class="elem"><a href="aboutusafterlogin.html" class="hiren">About Us</a></div>
+            <div class="elem"><a href="contactusafterlogin.html" class="hiren">Contact Us</a></div>
+            <div class="elem"><a href="account.html" class="hiren">Account</a></div>
+            <div class="elem"><a href="index.html" class="hiren1">Logout</a></div>
+        </div>
+    </div>
+    <div class="professionpro">
+        <b><span class="P">P</span><span>ROFESSION</span><span class="P">P</span><span>RO</span></b>
+    </div>
+    <div class="job">
+        We recommend you to become these :- <br><br>
+        <span class="result">1. Software Engineer</span><br><br>
+        <span class="result">2. HR</span><br><br>
+        <span class="result">3. Cricketer</span>
+    </div>
+    <br><br>
+    <div class="pag">
+    <div class="harshit1">
+    <div class="result1">1. Career Path for Software Engineer :-</div>
+    <div class="path">
+        <div class="PCM1" id="one">
+            Class 10th
+        </div>
+        <div class="arrw">
+        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png">
+        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png"></div>
+        <div class="PCM3" id="two">
+            Class 11th and 12th in PCM
+        </div>
+        <div class="arrw">
+        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png">
+        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png"></div>
+        <div class="ff">
+            <div class="jb" id="jb1">Job</div>
+            <div class="la"><img src="la.png" height=20px width=50px></div>
+            <div class="PCM" id="three">
+                B.Tech in CSE <br>or related fields
+            </div>
+        </div>
+        <div class="arrw">
+        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png">
+        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png"></div>
+        <div class="ff">
+            <div class="jb" id="jb2">Job</div>
+            <div class="la"><img src="la.png" height=20px width=50px></div>
+            <div class="PCM" id="four">
+                M.Tech in CSE <br>or related fields
+            </div>
+        </div>
+        <div class="arrw">
+        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png">
+        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png"></div>
+        <div class="PCM4" id="five">
+            PHD in CSE <br>or related fields
+        </div>
+        <div class="arrw">
+        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png">
+        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png"></div>
+        <div class="PCM2" id="jb3">
+            Job
+        </div>
+        <br><br>
+    </div>
+    </div>
+    <div class="harshit2">
+        <div class="result1">1. Career Path for Software Engineer :-</div>
+        <div class="path">
+            <div class="PCM1" id="one">
+                Class 10th
+            </div>
+            <div class="arrw">
+            <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png">
+            <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png"></div>
+            <div class="PCM3" id="two">
+                Class 11th and 12th in PCM
+            </div>
+            <div class="arrw">
+            <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png">
+            <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png"></div>
+            <div class="ff">
+                <div class="jb" id="jb1">Job</div>
+                <div class="la"><img src="la.png" height=20px width=50px></div>
+                <div class="PCM" id="three">
+                    B.Tech in CSE <br>or related fields
+                </div>
+            </div>
+            <div class="arrw">
+            <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png">
+            <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png"></div>
+            <div class="ff">
+                <div class="jb" id="jb2">Job</div>
+                <div class="la"><img src="la.png" height=20px width=50px></div>
+                <div class="PCM" id="four">
+                    M.Tech in CSE <br>or related fields
+                </div>
+            </div>
+            <div class="arrw">
+            <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png">
+            <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png"></div>
+            <div class="PCM4" id="five">
+                PHD in CSE <br>or related fields
+            </div>
+            <div class="arrw">
+            <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png">
+            <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png"></div>
+            <div class="PCM2" id="jb3">
+                Job
+            </div>
+            <br><br>
+        </div>
+        </div>
+        <div class="harshit3">
+            <div class="result1">1. Career Path for Software Engineer :-</div>
+            <div class="path">
+                <div class="PCM1" id="one">
+                    Class 10th
+                </div>
+                <div class="arrw">
+                <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png">
+                <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png"></div>
+                <div class="PCM3" id="two">
+                    Class 11th and 12th in PCM
+                </div>
+                <div class="arrw">
+                <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png">
+                <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png"></div>
+                <div class="ff">
+                    <div class="jb" id="jb1">Job</div>
+                    <div class="la"><img src="la.png" height=20px width=50px></div>
+                    <div class="PCM" id="three">
+                        B.Tech in CSE <br>or related fields
+                    </div>
+                </div>
+                <div class="arrw">
+                <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png">
+                <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png"></div>
+                <div class="ff">
+                    <div class="jb" id="jb2">Job</div>
+                    <div class="la"><img src="la.png" height=20px width=50px></div>
+                    <div class="PCM" id="four">
+                        M.Tech in CSE <br>or related fields
+                    </div>
+                </div>
+                <div class="arrw">
+                <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png">
+                <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png"></div>
+                <div class="PCM4" id="five">
+                    PHD in CSE <br>or related fields
+                </div>
+                <div class="arrw">
+                <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png">
+                <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png"></div>
+                <div class="PCM2" id="jb3">
+                    Job
+                </div>
+                <br><br><br>
+            </div>
+</div>
+</div>
+    </div>
+
+
+    <script>
+        const first=document.getElementById("one");
+        const second=document.getElementById("two");
+        const third=document.getElementById("three");
+        const fourth=document.getElementById("four");
+        const fifth=document.getElementById("five");
+        const j1=document.getElementById("jb1");
+        const j2=document.getElementById("jb2");
+        const j3=document.getElementById("jb3");
+        first.onclick = function() {myFunction1()};
+        second.onclick = function() {myFunction2()};
+        third.onclick = function() {myFunction3()};
+        fourth.onclick = function() {myFunction4()};
+        fifth.onclick = function() {myFunction5()};
+        j1.onclick = function() {myfunction6()};
+        j2.onclick = function() {myfunction7()};
+        j3.onclick = function() {myfunction8()};
+        function myFunction1() {
+            first.style.backgroundColor='#7FFF00';
+            second.style.backgroundColor='rgb(242, 191, 88)';
+            three.style.backgroundColor='rgb(242, 191, 88)';
+            fourth.style.backgroundColor='rgb(242, 191, 88)';
+            fifth.style.backgroundColor='rgb(242, 191, 88)';
+            j1.style.backgroundColor='rgb(242, 191, 88)';
+            j2.style.backgroundColor='rgb(242, 191, 88)';
+            j3.style.backgroundColor='rgb(242, 191, 88)';
+        }
+        function myFunction2() {
+            first.style.backgroundColor='#7FFF00';
+            second.style.backgroundColor='#7FFF00';
+            three.style.backgroundColor='rgb(242, 191, 88)';
+            fourth.style.backgroundColor='rgb(242, 191, 88)';
+            fifth.style.backgroundColor='rgb(242, 191, 88)';
+            j1.style.backgroundColor='rgb(242, 191, 88)';
+            j2.style.backgroundColor='rgb(242, 191, 88)';
+            j3.style.backgroundColor='rgb(242, 191, 88)';
+        }
+        function myFunction3() {
+            first.style.backgroundColor='#7FFF00';
+            second.style.backgroundColor='#7FFF00';
+            three.style.backgroundColor='#7FFF00';
+            fourth.style.backgroundColor='rgb(242, 191, 88)';
+            fifth.style.backgroundColor='rgb(242, 191, 88)';
+            j1.style.backgroundColor='rgb(242, 191, 88)';
+            j2.style.backgroundColor='rgb(242, 191, 88)';
+            j3.style.backgroundColor='rgb(242, 191, 88)';
+        }
+        function myFunction4() {
+            first.style.backgroundColor='#7FFF00';
+            second.style.backgroundColor='#7FFF00';
+            three.style.backgroundColor='#7FFF00';
+            fourth.style.backgroundColor='#7FFF00';
+            fifth.style.backgroundColor='rgb(242, 191, 88)';
+            j1.style.backgroundColor='rgb(242, 191, 88)';
+            j2.style.backgroundColor='rgb(242, 191, 88)';
+            j3.style.backgroundColor='rgb(242, 191, 88)';
+        }
+        function myFunction5() {
+            first.style.backgroundColor='#7FFF00';
+            second.style.backgroundColor='#7FFF00';
+            three.style.backgroundColor='#7FFF00';
+            fourth.style.backgroundColor='#7FFF00';
+            fifth.style.backgroundColor='#7FFF00';
+            j1.style.backgroundColor='rgb(242, 191, 88)';
+            j2.style.backgroundColor='rgb(242, 191, 88)';
+            j3.style.backgroundColor='rgb(242, 191, 88)';
+        }
+        function myfunction6(){
+            first.style.backgroundColor='#7FFF00';
+            second.style.backgroundColor='#7FFF00';
+            three.style.backgroundColor='#7FFF00';
+            fourth.style.backgroundColor='rgb(242, 191, 88)';
+            fifth.style.backgroundColor='rgb(242, 191, 88)';
+            j1.style.backgroundColor='#7FFF00';
+            j2.style.backgroundColor='rgb(242, 191, 88)';
+            j3.style.backgroundColor='rgb(242, 191, 88)';
+        }
+        function myfunction7(){
+            first.style.backgroundColor='#7FFF00';
+            second.style.backgroundColor='#7FFF00';
+            three.style.backgroundColor='#7FFF00';
+            fourth.style.backgroundColor='#7FFF00';
+            fifth.style.backgroundColor='rgb(242, 191, 88)';
+            j1.style.backgroundColor='rgb(242, 191, 88)';
+            j2.style.backgroundColor='#7FFF00';
+            j3.style.backgroundColor='rgb(242, 191, 88)';
+        }
+        function myfunction8(){
+            first.style.backgroundColor='#7FFF00';
+            second.style.backgroundColor='#7FFF00';
+            three.style.backgroundColor='#7FFF00';
+            fourth.style.backgroundColor='#7FFF00';
+            fifth.style.backgroundColor='#7FFF00';
+            j1.style.backgroundColor='rgb(242, 191, 88)';
+            j2.style.backgroundColor='rgb(242, 191, 88)';
+            j3.style.backgroundColor='#7FFF00';
+        }
+    </script>
+    
+
+
+
+
+</div>
+</body>
+</html>

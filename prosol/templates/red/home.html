@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/style.css? {% now 'U' %}">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            height: 100%;
+            width:100%;
+            overflow-x: hidden;
+            background-color:rgb(10, 10, 10);
+            background-image: url("");
+            background-repeat: no-repeat;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="team-section">
+    <div id="main">
+        <div>
+            <!-- <div class="elem"><a href="home.html" class="hiren">Home</a></div> -->
+            {% if user.is_authenticated %}
+                <div class="elem"><a href="accounts/profile" class="hiren">Hello, {{user.first_name}}!</a></div>
+                <div class="elem"><a href="aboutus" class="hiren">About Us</a></div>
+                <div class="elem"><a href="contactus" class="hiren">Contact Us</a></div>
+                <div class="elem"><a href="accounts/logout" class="hiren">Logout</a></div>
+            {% else %}
+                <div class="elem"><a href="accounts/login" class="hiren">Login</a></div>
+                <div class="elem"><a href="accounts/register" class="hiren">Register</a></div>
+                <div class="elem"><a href="aboutus" class="hiren">About Us</a></div>
+                <div class="elem"><a href="contactus" class="hiren">Contact Us</a></div>
+            {% endif %}
+
+        </div>
+    </div>
+    <div class="professionpro">
+        <span class="P">P</span><span>ROFESSION</span><span class="P">P</span><span>RO</span>
+    </div>
+<div id="boddiv">
+
+    {% if user.is_authenticated %}
+
+        <div onclick="window.location.href='admissions.html'" class="part" id="firstb">
+            <h1>Admissions <br>Open</h1>
+            <div class="chat1">
+            <b>  <p>Here, You can see all the information related to Admissions that are open in a college/university .</p></b>
+            </div>
+        </div>
+
+        <div onclick="window.location.href='survey'" class="part" id="secondb">
+            <h1>Predict Your <br>Career</h1>
+            <div class="chat1">
+            <b> <p>Here, you can know the best suited Carrer and Carrer path for you .</p></b>
+            </div>
+        </div>
+
+        <div onclick="window.location.href='jobsavailable.html'" class="part" id="lastb">
+            <h1>Job <br>Opportunities</h1>
+            <div class="chat1">
+               <b> <p>Here, you can check for all the job openings in all sectors .</p></b>
+            </div>
+        </div>
+
+    {% else %}
+
+        <div onclick="window.location.href='accounts/login'" class="part" id="firstb">
+            <h1>Admissions <br>Open</h1>
+            <div class="chat1">
+            <b>  <p>Here, You can see all the information related to Admissions that are open in a college/university .</p></b>
+            </div>
+        </div>
+        
+        <div onclick="window.location.href='accounts/login'" class="part" id="secondb">
+            <h1>Predict Your <br>Career</h1>
+            <div class="chat1">
+            <b> <p>Here, you can know the best suited Carrer and Carrer path for you .</p></b>
+            </div>
+        </div>
+
+        <div onclick="window.location.href='accounts/login'" class="part" id="lastb">
+            <h1>Job <br>Opportunities</h1>
+            <div class="chat1">
+               <b> <p>Here, you can check for all the job openings in all sectors .</p></b>
+            </div>
+        </div>
+
+    {% endif %}
+    
+</div>
+</div>
+<script type = "text/javascript" src= "{% static 'particles.js' %}"></script>
+  <script type = "text/javascript" src="{% static 'app.js' %}"></script>
+  <script>requestAnimationFrame(update);</script>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("main").style.top = "0";
+      } else {
+        document.getElementById("main").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+</body>
+</html>

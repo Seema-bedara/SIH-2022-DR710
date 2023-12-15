@@ -1,0 +1,1232 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions</title>
+    <link rel="stylesheet" href="/static/style.css? {% now 'U' %}">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            height: 100%;
+            width:100%;
+            overflow-x: hidden;
+            background-color:white;
+            background-image: url("");
+            background-repeat: no-repeat;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .card{
+            width: 50%;
+            height: 20vh;
+            text-align: center;
+            background-color:white;
+            margin-top:70px;
+            border-radius: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            
+        }
+        .out{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .card1{
+            border: 6px solid rgb(195, 119, 165);
+            width: 40vh;
+            height: 20.5vh;
+            background-color:#ffcf9f;
+            margin-top:40px;
+            border-radius: 20px;
+            padding-bottom: 40px;
+            padding: 0% 2% ; 
+            margin-bottom: 40px;
+           font-size: 125%;
+           
+            
+        }
+        .IN{ color: blue;
+           font-family:'Times New Roman', Times, serif; }
+        
+        .CN{ color: rgb(202, 27, 48);
+          font-family:'Times New Roman', Times, serif;}
+        
+        .SD{ color: rgb(15, 153, 15);
+            font-family:fantasy; }
+        
+            .ED{ color: rgb(206, 65, 168);
+                font-family: 'Times New Roman', Times, serif; }
+              
+            .VS{ color:rgb(21, 24, 24) ;
+                font-family: initial; }
+        
+        .BT{  color: rgb(34, 96, 130);
+            border-radius: 40%;
+            padding: 0.5% 1%;
+            font-family:cursive ; 
+            margin: 0% 30%;}
+        
+        button:hover{
+           
+            color: rgb(210, 31, 31);
+            background-color: rgb(200, 247, 107);
+          }
+        
+          .card1:hover{
+            background-color:white;
+          }
+        
+        .out{
+            width: 100%;
+            align-items: center;
+            overflow-x: hidden;
+             display: flex; 
+             flex-direction: column;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="team-section">
+    <div id="main">
+      <div>
+        <div class="elem"><a href="/" class="hiren">Home</a></div>
+        <div class="elem"><a href="/aboutus" class="hiren">About Us</a></div>
+        <div class="elem"><a href="/contactus" class="hiren">Contact Us</a></div>
+        <div class="elem"><a href="/accounts/profile" class="hiren">Account</a></div>
+        <div class="elem"><a href="/accounts/logout" class="hiren">Logout</a></div>
+    </div>
+    </div>
+    <div class="professionpro">
+        <span class="P">P</span><span>ROFESSION</span><span class="P">P</span><span>RO</span>
+    </div>
+    <div class="out">
+
+   
+
+        <div class="card1">
+          <div class="IN">
+            GMRIT
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in CSE</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 30 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            LOYOLA COLLEGE, CHENNAI
+          </div>
+    
+          <div class="CN">
+            <span> BA</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 70 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 5 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 20 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            University of Delhi
+          </div>
+    
+          <div class="CN">
+            <span> BA LLB / B.Com LLB / BBA LLB</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 70 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 10 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 25 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Loyola College
+          </div>
+    
+          <div class="CN">
+            <span>BA </span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 80 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 15 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            IITP
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in CSE</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 20 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open -  1 september 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 15 september  2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            IITG
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in ME</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 40 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 22 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Lady Shri Ram College For Women (LSR)
+          </div>
+    
+          <div class="CN">
+            <span> BA</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 70 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Hindu College
+    
+          </div>
+    
+          <div class="CN">
+            <span> BSc</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 80 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 3 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 26 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            IITD
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in CE</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 50 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 10 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 25 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            NIT Hamirpur
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in CSE</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 45 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 15 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            University of Delhi
+          </div>
+    
+          <div class="CN">
+            <span> Bcom/Bsc</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 80 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 20 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Hansraj College
+    
+          </div>
+    
+          <div class="CN">
+            <span> Bsc</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 70 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 10 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            NIT Patna
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in CSE</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 50 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 15 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 25 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            NIT Manpur
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech EE</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 30 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 10 september 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 september 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Miranda House College
+          </div>
+    
+          <div class="CN">
+            <span> Diploma</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 90 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Gargi College
+          </div>
+    
+          <div class="CN">
+            <span> BA</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 80 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 15 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            Col1
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in CSE</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 50 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 5 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            col2
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in CBE</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 70 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 20 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            col3
+          </div>
+    
+          <div class="CN">
+            <span> Bcom</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 80 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 16 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 28 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            COL4
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in MME</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 70 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            COL5
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in AI</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 40 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 20 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            COL6
+          </div>
+    
+          <div class="CN">
+            <span> BA</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 90 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            COL7
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in CE</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 70 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 20 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            COL7
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in CSE</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 70 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 14 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            COL8
+          </div>
+    
+          <div class="CN">
+            <span> Bcom</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 95 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 10 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            GMRIT
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in ME</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 70 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            COL9
+          </div>
+    
+          <div class="CN">
+            <span> Bcom</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 80 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 12 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            COL10
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in ME</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 50 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 7 september 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 september 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            COL11
+          </div>
+    
+          <div class="CN">
+            <span> BSc</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 90 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 8 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            COL12
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in EE</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 70 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            col13
+          </div>
+    
+          <div class="CN">
+            <span> BA</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 100 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 20 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            COL15
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in MME</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 70 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 9 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            COL16
+          </div>
+    
+          <div class="CN">
+            <span> Bcom</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 98 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 15 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            GMRIT
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in EE</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 100 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 5 september 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 september 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            COL19
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in CB</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 80 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+           COL20
+          </div>
+    
+          <div class="CN">
+            <span> Bsc</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 120 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 14 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            GMRIT
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in CB</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 150 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 september 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 september  2023
+           
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+           NIT Goa
+          </div>
+    
+          <div class="CN">
+            <span>  CSE</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 70 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            NIT Surat
+          </div>
+    
+          <div class="CN">
+            <span>  MME</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 100 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 15 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            NIT Delhi
+          </div>
+    
+          <div class="CN">
+            <span> Bcom</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 170 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            col22
+          </div>
+    
+          <div class="CN">
+            <span> BA</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 270 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 18 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            NIT Raipur
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in CS</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 70 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 1 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 20 july 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+           col23
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in Civil</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 80 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 10 july 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 20 september 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+    
+        <div class="card1">
+          <div class="IN">
+            NIT Jalandher
+          </div>
+    
+          <div class="CN">
+            <span> B.Tech in Physics</span> <br>
+          </div>
+    
+          <div class="VS">
+            Vacent Seats - 70 <br>
+          </div>
+    
+          <div class="SD">
+            <span>Addmission Open - 15 september 2023</span>
+          </div>
+    
+          <div class="ED">
+            Addmission Close - 30 Augest 2023
+          </div>
+    
+          <button class="BT">Apply Now </button>
+    
+        </div>
+        
+    
+      </div>
+
+
+
+
+
+
+</div>
+<script src="{% static 'particles.js' %}"></script>
+  <script src="{% static 'app.js' %}"></script>
+  <script>requestAnimationFrame(update);</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+0                Data Science   6
+1                          HR  12
+2                    Advocate   0
+3                        Arts   1
+4               Web Designing  24
+5         Mechanical Engineer  16
+6                       Sales  22
+7          Health and fitness  14
+8              Civil Engineer   5
+9              Java Developer  15
+10           Business Analyst   4
+11              SAP Developer  21
+12         Automation Testing   2
+13     Electrical Engineering  11
+14         Operations Manager  18
+15           Python Developer  20
+16            DevOps Engineer   8
+17  Network Security Engineer  17
+18                        PMO  19
+19                   Database   7
+20                     Hadoop  13
+21              ETL Developer  10
+22           DotNet Developer   9
+23                 Blockchain   3
+24                    Testing  23
